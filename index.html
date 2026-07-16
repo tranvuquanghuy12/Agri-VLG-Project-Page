@@ -1,0 +1,199 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Agri-VLG: Robust Identification of Counterfeit Agricultural Products using Few-Shot Annotated Data and Open-Source Knowledge">
+  <meta name="keywords" content="Agri-VLG, Counterfeit Agricultural Products, Few-Shot Learning, Vision-Language Model, Graph Attention Network, IEEE Access">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agri-VLG</title>
+
+  
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  
+<meta property="og:image:type" content="image/png">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Agri-VLG: Robust Identification of Counterfeit Agricultural Products using Few-Shot Annotated Data and Open-Source Knowledge">
+<meta name="twitter:description" content="Deep learning has achieved remarkable success in computer vision, yet the scarcity of labeled data in specialized fields like counterfeit agricultural product identification remains a significant challenge. To address this, we propose Agri-VLG, a robust framework that synergizes few-shot annotated data with open-source knowledge for precise identification using Vision-Language Models and Graph Attention Networks.">
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans:400,600|Noto+Sans:400,600|Castoro:400,600"
+        rel="stylesheet">
+
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/css/bulma-carousel.min.css">
+  <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/css/bulma-carousel.min.css">-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        
+</head>
+<body>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered" style="margin-bottom: 0em">
+        <div class="column is-max-desktop has-text-centered">
+          <h1 class="title is-1 publication-title" style="margin-bottom:0rem">Agri-VLG</h1>
+          <h3 class="title is-3 publication-title">Robust Identification of Counterfeit Agricultural Products using Few-Shot Annotated Data and Open-Source Knowledge</h3>
+ </div>
+ </div>
+      <div class="columns is-centered">
+        <div class="column is-four-fifths has-text-centered">
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="#">Dat Tran</a><sup>1, *</sup>,
+            </span>
+            <span class="author-block">
+              <a href="#">Vu Quang Huy Tran</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              <a href="#">Manh Dung Nguyen</a><sup>2</sup>,
+            </span>
+            <span class="author-block">
+              <a href="#">Hoai Nam Vu</a><sup>3</sup>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>Thuyloi University, Hanoi, Vietnam</span>
+            &nbsp;&nbsp;
+            <span class="author-block"><sup>2</sup>Department of Artificial Intelligence, PTIT, Hanoi, Vietnam</span>
+            &nbsp;&nbsp;
+            <span class="author-block"><sup>3</sup>Young Innovation Research Laboratory (YIRLoDT), PTIT, Hanoi, Vietnam</span>
+          </div>
+
+
+          <h1 style="font-size:24px;font-weight:bold">IEEE Access (2025)</h1>
+
+    
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://ieeexplore.ieee.org/document/11605053"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-ieee"></i>
+                  </span>
+                  <span>IEEE Access</span>
+                </a>
+              </span>
+              
+              
+              <span class="link-block">
+                <a href="https://github.com/tranvuquanghuy12/Agri-VLG.git"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i> 
+                  </span>
+                  <span>Code</span>
+                </a>
+              </span>
+
+
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Deep learning has achieved remarkable success in computer vision, yet the scarcity of labeled data in specialized fields like counterfeit agricultural product identification remains a significant challenge. While humans can distinguish authentic goods from fakes using prior knowledge, machines often struggle with extreme data imbalance and domain gaps in task-specific datasets like TLU-States. To address this, we propose Agri-VLG, a robust framework that synergizes few-shot annotated data with open-source knowledge for precise identification. The architecture incorporates a Vision-Language Model (VLM) to retrieve high-quality web candidates from open data, effectively bridging the domain gap between generic imagery and agricultural tasks. To exploit the relationships between retrieved samples and target images, a Graph Attention Network (GAT) layer is employed to facilitate cross-image interaction and refine visual features. Our approach follows a two-stage process: Stage 1 involves finetuning to align representations, while Stage 2 focuses on classifier retraining to shift from imbalanced to balanced predictions. Extensive experiments on agricultural benchmarks demonstrate that Agri-VLG significantly outperforms state-of-the-art methods, proving that graph-based refinement and external knowledge-guided retrieval are highly effective for detecting counterfeit products in few-shot scenarios.
+          </p>
+        </div>
+      </div>
+    </div>
+    </div><br>
+    <!--/ Abstract. -->
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full">
+        <h2 class="title is-3">Architecture</h2>
+        <img src="static/images/Kientructongthe.png" alt="Architecture" />
+        <p class="content has-text-justified">
+          The overall architecture of Agri-VLG, featuring VLM-driven retrieval, GAT-based refinement, and a two-stage training strategy for balanced agricultural product identification.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full">
+        <h2 class="title is-3">Results</h2>
+        <img src="static/images/Ket qua chay.png" alt="Results" />
+        <p class="content has-text-justified">
+          Performance comparison on agricultural datasets under few-shot settings. The proposed Agri-VLG consistently outperforms baselines.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- <section> -->
+<!-- <br> -->
+
+
+ <br>
+
+<section class="section" id="BibTeX">
+  <div class="container  content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@article{tran2024agrivlg,
+  title     = {Agri-VLG: Robust Identification of Counterfeit Agricultural Products using Few-Shot Annotated Data and Open-Source Knowledge},
+  author    = {Tran, Dat and Tran, Vu Quang Huy and Nguyen, Manh Dung and Vu, Hoai Nam},
+  journal   = {IEEE Access},
+  year      = {2025},
+  doi       = {10.1109/ACCESS.2024.0429000}
+}</code></pre>
+  </div>
+</section>
+
+<footer class="footer">
+  <div align="center" class="container">
+    <div class="columns is-centered">
+        <div class="content">
+            This website is borrowed from <a href="https://github.com/nerfies/nerfies.github.io">nerfies</a>. Thanks <a href="https://keunhong.com">Keunhong</a>!
+        </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
